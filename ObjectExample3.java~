@@ -1,0 +1,15 @@
+// 4.5.5
+
+
+class XYPoint {
+
+    double x;
+    double y;
+
+    public double distance (XYPoint p)
+    {
+	System.out.println ("In distance(): p=" + p);
+	return Math.sqrt ( (x-p.x)*(x-p.x) + (y-p.y)*(y-p.y) );
+    }
+    
+}
