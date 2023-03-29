@@ -1,0 +1,40 @@
+// 4.5.9
+
+
+class XYPoint {
+
+    double x;
+    double y;
+
+    // Consctructor
+    public XYPoint (double inputX, double inputY)
+    {
+	System.out.println ("We're in the constructor");
+	if ( (inputX >= 0) && (inputY >= 0) ) {
+	    x = inputX; y = inputY;
+	}
+	else {
+	    x = 0; y = 0;
+	}
+    }
+
+    public String toString ()
+    {
+	return "Point: (" + x + ", " + y + ")";
+    }
+    
+}
+
+public class ObjectExample6 {
+
+    public static void main (String[] argv)
+    {
+	DrawTool.setXYRange (0,10, 0, 10);
+	DrawTool.display ();
+
+	ArrayList<XYPoint> points = new ArrayList<>();
+	XYPoint p = new XYPoint (7,5);
+	points.add (p);
+    }
+
+}    
