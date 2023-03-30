@@ -30,19 +30,19 @@ class DrawPanel extends JPanel {
 	g2.setStroke(new BasicStroke(2));
 	g2.setColor (Color.black);
 	// Face
-	g2.drawOval (70+delta, 90+delta, 200+delta, 250+delta);
+	g2.drawOval (70, 90, 200+delta, 250+delta);
 	// Eyes
-	g2.drawOval (95+delta,160+delta, 55+delta, 40+delta);
-	g2.drawOval (190+delta,160+delta, 55+delta, 40+delta);
-	g2.fillOval (115+delta, 175+delta, 15+delta, 15+delta);
-	g2.fillOval (210+delta, 175+delta, 15+delta, 15+delta);
+	g2.drawOval (95,160, 55+delta, 40+delta);
+	g2.drawOval (190,160, 55+delta, 40+delta);
+	g2.fillOval (115, 175, 15+delta, 15+delta);
+	g2.fillOval (210, 175, 15+delta, 15+delta);
 	// Ears
-	g2.drawOval (45+delta,195+delta, 25+delta, 50+delta);
-	g2.drawOval (270+delta,195+delta, 25+delta, 50+delta);
+	g2.drawOval (45-delta,195, 25+delta, 50+delta);
+	g2.drawOval (270+delta,195, 25+delta, 50+delta);
 	// Nose
-	g2.drawOval (145+delta,205+delta, 50+delta, 50+delta);
+	g2.drawOval (145,205, 50+delta, 50+delta);
 	// Mouth
-	g2.fill(new Arc2D.Double(100+delta, 210+delta, 140+delta, 100+delta, 200, 140,Arc2D.CHORD));
+	g2.fill(new Arc2D.Double(100, 210, 140+delta, 100+delta, 200, 140,Arc2D.CHORD));
     }
 }
 
